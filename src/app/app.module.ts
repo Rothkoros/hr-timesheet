@@ -13,8 +13,13 @@ import { MaterialModule } from './modules/material.module';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import {ReactiveFormsModule} from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field'
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HttpClientModule} from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 
 
@@ -39,7 +44,12 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

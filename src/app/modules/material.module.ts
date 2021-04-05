@@ -6,6 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field'
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -19,13 +20,15 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule,
   
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatTabsModule,
     
   ]
 })
